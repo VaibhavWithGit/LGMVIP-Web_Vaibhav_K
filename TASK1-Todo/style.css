@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-width: 250px;
+    background-color: #93ffff;
+}
+
+.container1 {
+    margin: 2% 10%;
+}
+
+.container2 {
+    margin: 2% 10%;
+}
+
+h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 60px;
+    margin: 5% auto;
+}
+
+.header {
+    background-color: #7400d2;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+    margin: 5% 10%;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.621);
+}
+
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+    border-radius: 15px;
+}
+
+ul {
+    margin: 2% 10%;
+    padding: 0;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background: #fcff4c;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: 0.3s;
+    margin: 2% auto;
+    border-radius: 15px;
+    transform: scale(100%);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.226);
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+ul li:nth-child(odd) {
+    background: #fcff4c;
+    transform: scale(100%);
+}
+
+ul li:hover {
+    background: rgb(255, 255, 255);
+    transform: scale(105%);
+}
+
+ul li.checked {
+    background: rgb(255, 255, 248);
+    color: rgb(66, 66, 66);
+    text-decoration: line-through;
+    transform: scale(90%);
+}
+
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: rgb(106, 106, 106);
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+    border-radius: 15px;
+}
+
+.close:hover {
+    background-color: #ff2e1f;
+    color: white;
+}
+
+input {
+    border: none;
+    border-radius: 25px;
+    width: 70%;
+    padding: 10px;
+    float: left;
+    font-size: 20px;
+    text-align: center;
+}
+
+.addtask {
+    padding: 10px;
+    width: 25%;
+    background: #ff7bae;
+    color: rgb(255, 255, 255);
+    float: right;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.addtask:hover {
+    background-color: #FB2576;
+    transform: scale(110%);
+}
+
+input::placeholder {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #000;
+}
