@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Student Enrollment Form</h1>
+    <div class="box">
+        <div class="container">
+            <form action="" id="form">
+                <div class="input1">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" class="innerinput" placeholder="Enter The Name" required>
+                </div>
+                <div class="input1">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" class="innerinput" placeholder="Enter email id" required>
+                </div>
+
+                <div class="input1">
+                    <label for="image">Image:</label>
+                    <input type="file" name="image" class="innerinput" id="img" alt="Choosen image" accept="image/*"
+                        onchange="loadFile(event)">
+                </div>
+                <div class="input2">
+                    <label for="skills">Skills:</label>
+                    <div class="checks">
+                        <div class="checks1"><input type="checkbox" name="skills">
+                            <label for="">HTML5</label>
+                        </div>
+                        <div class="checks1"><input type="checkbox" name="skills">
+                            <label for="">CSS3</label>
+                        </div>
+                        <div class="checks1"><input type="checkbox" name="skills">
+                            <label for="">JS</label>
+                        </div>
+                        <div class="checks1"><input type="checkbox" name="skills">
+                            <label for="">React</label>
+                        </div>
+                    </div>
+                </div>
+                <input class="submit" type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="display">
+            <h2>Enrollments</h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
